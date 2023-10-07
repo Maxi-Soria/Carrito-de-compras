@@ -4,44 +4,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Bienvenido/a a Free Code Market</h1>
 
-   <div class="d-inline-block card" style="width: 18rem; margin-right: 10px;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Articulo 1</h5>
-    <p class="card-text">Descripción del artículo</p>
-      <p class="card-text">Precio: </p>
-    <a href="#" class="btn btn-primary">Agregar al carrito</a>
-  </div>
-</div>
-
-<div class="d-inline-block card" style="width: 18rem; margin-right: 10px;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Articulo 2</h5>
-    <p class="card-text">Descripción del artículo</p>
-    <p class="card-text">Precio: </p>
-    <a href="#" class="btn btn-primary">Agregar al carrito</a>
-  </div>
-</div>
-
-    <div class="d-inline-block card" style="width: 18rem; margin-right: 10px;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Articulo 3</h5>
-    <p class="card-text">Descripción del artículo</p>
-      <p class="card-text">Precio: </p>
-    <a href="#" class="btn btn-primary">Agregar al carrito</a>
-  </div>
-</div>
-
-    <div class="d-inline-block card" style="width: 18rem; margin-right: 10px;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Articulo 4</h5>
-    <p class="card-text">Descripción del artículo</p>
-      <p class="card-text">Precio: </p>
-    <a href="#" class="btn btn-primary">Agregar al carrito</a>
-  </div>
+  
+    <div class="row">
+    <% foreach (var articulo in ListaArticulos) { %>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="<%= articulo.Imagen %>" alt="Card image cap" style="height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= articulo.Nombre %></h5>
+                    <p class="card-text"><%= articulo.Descripcion %></p>
+                    <p class="card-text">Precio: <%= articulo.Precio %></p>
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    <% } %>
 </div>
 
 
