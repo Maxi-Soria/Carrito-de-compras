@@ -70,3 +70,12 @@ C:\Users\erica\Desktop\Programacion 3\tp-winform-equipo-7\SolucionGestorDeArticu
 C:\Users\erica\Desktop\Programacion 3\tp-winform-equipo-7\SolucionGestorDeArticulos\manager\obj\Debug\manager.csproj.CopyComplete
 C:\Users\erica\Desktop\Programacion 3\tp-winform-equipo-7\SolucionGestorDeArticulos\manager\obj\Debug\manager.dll
 C:\Users\erica\Desktop\Programacion 3\tp-winform-equipo-7\SolucionGestorDeArticulos\manager\obj\Debug\manager.pdb
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\bin\Debug\manager.dll
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\bin\Debug\manager.pdb
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\bin\Debug\dominio.dll
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\bin\Debug\dominio.pdb
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.csproj.AssemblyReference.cache
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.csproj.CopyComplete
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.dll
+C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.pdb
