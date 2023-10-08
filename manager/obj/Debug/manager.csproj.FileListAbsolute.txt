@@ -79,3 +79,12 @@ C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.cs
 C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.csproj.CopyComplete
 C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.dll
 C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\manager\obj\Debug\manager.pdb
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\bin\Debug\manager.dll
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\bin\Debug\manager.pdb
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\bin\Debug\dominio.dll
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\bin\Debug\dominio.pdb
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\obj\Debug\manager.csproj.AssemblyReference.cache
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\obj\Debug\manager.csproj.CoreCompileInputs.cache
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\obj\Debug\manager.csproj.CopyComplete
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\obj\Debug\manager.dll
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\manager\obj\Debug\manager.pdb

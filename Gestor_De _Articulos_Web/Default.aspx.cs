@@ -15,7 +15,7 @@ namespace Gestor_De__Articulos_Web
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloManager negocio = new ArticuloManager();
-            ListaArticulos = negocio.ListarArticulos();
+            ListaArticulos = negocio.listaParaImagenes();
             
         }
     }

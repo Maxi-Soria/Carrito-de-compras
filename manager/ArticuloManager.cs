@@ -20,7 +20,8 @@ namespace manager
 
         public ArticuloManager()
         {
-            conexion = new SqlConnection("server=.\\SQLEXPRESSLABO; database=CATALOGO_P3_DB; integrated security=true");
+            AccesoDatos conexion = new AccesoDatos();
+            //conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true");
             comando = new SqlCommand();
         }
 
@@ -66,10 +67,11 @@ namespace manager
                     if (!Convert.IsDBNull(datos.Lector["ImagenUrl"]))
                     {
                         aux.Imagen = (string)datos.Lector["ImagenUrl"];
+
                     }
                     else
                     {
-
+                        aux.Imagen = "https://www.timandorra.com/wp-content/uploads/2016/11/Imagen-no-disponible-282x300.png";
                     }
 
                     lista.Add(aux);
