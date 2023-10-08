@@ -40,3 +40,9 @@ C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\dominio\obj\Debug\dominio.cs
 C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\dominio\obj\Debug\dominio.dll
 C:\Users\Gonzalo\Desktop\TP Carrito\Tp-Web-Equipo-7\dominio\obj\Debug\dominio.pdb
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\dominio\bin\Debug\dominio.dll
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\dominio\bin\Debug\dominio.pdb
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\dominio\obj\Debug\dominio.dll
+C:\Users\erica\Desktop\Programacion 3\Tp Web Gestor Articulos\dominio\obj\Debug\dominio.pdb
