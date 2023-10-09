@@ -24,6 +24,7 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
+            <asp:Label runat="server" ID="lblTotalCarrito" Text="Total del Carrito: $0.00" />
 
 
     </section>

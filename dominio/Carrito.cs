@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace dominio
 {
-    class Carrito
+    public class Carrito
     {
-        List<Articulo> Articulo;
+        List<Articulo> listaDeArticulos;
+
+
+        public void sumarArticuloACarrito(Articulo art)
+        {
+            listaDeArticulos.Add(art);
+        }
+
+    public int articulosEnCarrito()
+    {
+            return listaDeArticulos.Count();
+        }
     }
     
 }

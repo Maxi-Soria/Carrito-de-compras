@@ -22,24 +22,24 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/CRVDJETSJJMDHAVAPKSVACN2QA.jpg" class="d-block w-100" alt="...">
+                    <img src="https://www.cronista.com/files/image/419/419139/61d3378d218ac.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Celulares</h5>
+                        <p>¡Sólo por hoy descuentos increíbles!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://s1.eestatic.com/2019/04/12/actualidad/actualidad_390473732_130516122_800x535.jpg" class="d-block w-100" alt="...">
+                    <img src="https://mui.fitness/__export/1674270938846/sites/muifitness/img/2023/01/21/ropa-deportiva-mejora-rendimiento-2_1.jpg_759710130.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Indumentaria deportiva</h5>
+                        <p>Ropa especializada para ciclismo y más</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://img.freepik.com/fotos-premium/mediados-mujer-adulta-su-hija-haciendo-compras-linea-casa-familia-feliz-comprando-casa-productos-internet-mujeres-ordenando-linea_136813-1224.jpg?w=2000" class="d-block w-100" alt="...">
+                    <img src="https://la100.cienradios.com/resizer/-Ezw3Tyqc1zkQvVF_O-VrnCPCsU=/arc-photo-radiomitre/arc2-prod/public/BIJPFXM3VFDRHOPOTYU2XDG7AA.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Fiambres</h5>
+                        <p>Venta de longanizas, salames picado grueso y salchichones primavera</p>
                     </div>
                 </div>
             </div>

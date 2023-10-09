@@ -13,5 +13,13 @@ namespace Gestor_De__Articulos_Web
         {
 
         }
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            
+            lblMensajeConfirmacion.Text = "Mensaje enviado. Gracias por contactarse con nosotros.";
+            txtNombre.Text = "";
+            txtEmail.Text = "";
+            txtMensaje.Text = "";
+        }
     }
 }

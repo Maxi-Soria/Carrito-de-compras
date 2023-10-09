@@ -21,6 +21,9 @@ namespace Gestor_De__Articulos_Web
                 {
                     repEliminar.DataSource = seleccionados;
                     repEliminar.DataBind();
+                    
+                    decimal totalCarrito = CalcularTotalCarrito(seleccionados);
+                    lblTotalCarrito.Text = "Total del Carrito: $" + totalCarrito.ToString("0.00");
 
                 }
 
@@ -54,6 +57,17 @@ namespace Gestor_De__Articulos_Web
 
             Session["Seleccionados"] = seleccionados;
 
+        }
+        private decimal CalcularTotalCarrito(List<Articulo> articulos)
+        {
+            decimal total = 0;
+
+            foreach (var articulo in articulos)
+            {
+                total += articulo.Precio;
+            }
+
+            return total;
         }
     }
 }

@@ -17,7 +17,7 @@
     <form id="form1" runat="server">
         <div class="containerNav">
             <nav class="navbar navbar-expand " aria-label="Second navbar example">
-                <img src="" alt="logo" />
+                <img src="https://cdn-icons-png.flaticon.com/512/4027/4027033.png" alt="logo" width="40" height="40" />
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,11 @@
                         </ul>
                         <form role="search">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+
+
                         </form>
-                        <a class="contador" href  ="#">2</a>
+                       
+                      <a class="contador" id="contadorCarrito" href="#">0</a>
 
                         <a class="logoCarrito" href="Carrito.aspx"> 
                             <img src="icoCarrito.png" alt="icono del carrito" />
