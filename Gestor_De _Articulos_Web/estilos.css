@@ -4,6 +4,7 @@
     font-family: 'Mochiy Pop One';
     font-style: normal;
     font-weight: 400;
+
 }
 .navbar{
     min-height: 40px; 
@@ -28,12 +29,18 @@
 .logoCarrito {
     margin-left: 10px;
 }
-.contador{
-    margin-left:30px;
-    margin-right:10px;
+.contador {
+    margin-left: 30px;
+    margin-right: 10px;
     background-color: red;
     color: #ffffff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px; 
 }
+
 /*SECCION BODY */
 
 body {
@@ -104,14 +111,38 @@ h1 {
     color: #fff; 
     
 }
+.btn-Ver-Detalle:hover {
+    background-color: #ff8800;
+    color: #fff;
+}
+.btn-Ver-Detalle {
+    background-color: rgba(255, 219, 51, 0.8);
+    color: #333;
+    border-radius: 5px;
+    font-size: 10px; 
+    padding: 3px 8px; 
+}
+
+
+
+
+}
+
 .container {
     margin-top: 30px;
 }
 
+
 /*SECCION FOOTER*/
-.footer{
-    background-color: #29d561;
-    text-align:center;
+.footer {
+    background-color: #16202e;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    position:page;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
 }
 
 

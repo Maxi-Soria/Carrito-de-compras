@@ -22,8 +22,8 @@ namespace Gestor_De__Articulos_Web
                     List<Articulo> seleccionados = (List<Articulo>)Session["Seleccionados"];
                     int cantidadArticulos = seleccionados.Count;
 
-                    // Actualizar el enlace contadorCarrito con la cantidad de artículos
-                    // contadorCarrito = cantidadArticulos.ToString();
+                     //Actualizar el enlace contadorCarrito con la cantidad de artículos
+                     contadorCarrito.Text = cantidadArticulos.ToString();
                 }
             }
         }
