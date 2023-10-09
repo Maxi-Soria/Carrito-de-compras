@@ -35,29 +35,26 @@ namespace Gestor_De__Articulos_Web
             Button btn = (Button)sender;
             int articuloId = Convert.ToInt32(btn.CommandArgument);
 
-            
             List<Articulo> seleccionados;
-            if (Session["Seleccionados"] == null)
-            {
-                seleccionados = new List<Articulo>();
-            }
-            else
-            {
-                seleccionados = (List<Articulo>)Session["Seleccionados"];
-            }
+            if (Session["Seleccionados"] != null) { seleccionados = (List<Articulo>)Session["Seleccionados"]; }
+            else { seleccionados = new List<Articulo>();}
 
-           
-            for (int i = seleccionados.Count - 1; i >= 0; i--)
+            List<Articulo> nuevaLista = new List<Articulo>();
+            bool eliminado = false;
+
+            foreach (var articulo in seleccionados)
             {
-                if (articuloId == seleccionados[i].Id)
-                {
-                    seleccionados.RemoveAt(i);
-                }
+                if (!eliminado && articulo.Id == articuloId) { eliminado = true;}
+                else { nuevaLista.Add(articulo); }
             }
 
-            Session["Seleccionados"] = seleccionados;
+            Session["Seleccionados"] = nuevaLista;
 
+            repEliminar.DataSource = nuevaLista;
+            repEliminar.DataBind();
         }
+
+
         private decimal CalcularTotalCarrito(List<Articulo> articulos)
         {
             decimal total = 0;
