@@ -24,6 +24,24 @@ namespace Gestor_De__Articulos_Web
         protected global::System.Web.UI.WebControls.Repeater repEliminar;
 
         /// <summary>
+        /// txtCodigo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
+
+        /// <summary>
+        /// btnValidar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnValidar;
+
+        /// <summary>
         /// lblTotalCarrito control.
         /// </summary>
         /// <remarks>

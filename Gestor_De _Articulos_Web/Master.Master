@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mochiy+Pop+One&display=swap">
     <link href="estilos.css" rel="stylesheet" />
 
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,9 +38,9 @@
                                 <a runat="server" class="nav-link" href="Contacto.aspx">Contacto</a>
                             </li>
                         </ul>
-                          <form role="search">
-                                 <input id="searchInput" class="border-black form-control" type="search" placeholder="Buscar por nombre" aria-label="Search">
-                            </form>
+                        <form role="search">
+                            <input id="searchInput" class="border-black form-control" type="search" placeholder="Buscar por nombre" aria-label="Search">
+                        </form>
 
 
                         <asp:Label CssClass="contador" ID="contadorCarrito" runat="server" Text="">0</asp:Label>
@@ -55,8 +57,9 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
-            <footer class="footer">             
-                    <p>Desarrollado por Maximiliano Soria y Gonzalo Ligero</p>                
+
+            <footer class="footer">
+                <p>Desarrollado por Maximiliano Soria y Gonzalo Ligero</p>
             </footer>
 
         </div>
@@ -85,22 +88,6 @@
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    function actualizarContador() {
-        $.ajax({
-            url: 'Default.aspx',
-            type: 'POST',
-            contentType: 'application/json; charset=utf-8',
-            dataType: 'json',
-            success: function (data) {
-               
-                contadorCarrito.textContent = data.d;
-            },
-            
-        });
-    }
-
-</script>
 
 </body>
 </html>

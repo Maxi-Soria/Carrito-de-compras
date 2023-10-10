@@ -25,28 +25,12 @@ namespace Gestor_De__Articulos_Web
                      
                      contadorCarrito.Text = cantidadArticulos.ToString();
 
-                    
-                    int cantidadEnCarrito = ObtenerCantidadCarrito(); 
-
-                    contadorCarrito.Text = cantidadEnCarrito.ToString();
                 }
             }
 
            
         }
        
-        public static int ObtenerCantidadCarrito()
-        {
-            if (HttpContext.Current.Session["Seleccionados"] != null)
-            {
-                List<Articulo> seleccionados = (List<Articulo>)HttpContext.Current.Session["Seleccionados"];
-                return seleccionados.Count;
-            }
-            else
-            {
-                return 0;
-            }
-        }
 
 
     }

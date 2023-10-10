@@ -9,10 +9,9 @@
     <link href="estilos.css" rel="stylesheet" />
 
 
-
     <div class="reflected-header" style="text-shadow: 2px 2px #a732da;">
-    <h1>Llego la CocoSale, con el codigo 'loVoletea' 30% off</h1>
-</div>
+        <h1>Llego la CocoSale, con el codigo 'GENTES' 30% off</h1>
+    </div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -67,10 +66,12 @@
                                     <h5 class="card-title"><%# Eval("Nombre") %></h5>
                                     <p class="card-text"><%# Eval("Descripcion") %></p>
                                     <p class="card-text flex-grow-1"></p>
-                                    <p class="card-text">Precio: $ <%# string.Format("{0:0.00}", Eval("Precio")) %></p>                                                  
-                                    <div class="mt-auto" >
-                                        <asp:Button ID="btnAgregarAlCarrito" runat="server" Text="Agregar al carrito" OnClick="btnAgregarAlCarrito_Click" CssClass="btn btn-primary mb-2" CommandArgument='<%# Eval("Id") %>' CommandName="ArticuloId" OnClientClick="actualizarContador(); return true;" style="background-color: #007bff; color: white;" onmouseover="this.style.backgroundColor = '#a732da';" onmouseout="this.style.backgroundColor = '#007bff';" />
-                                        <button class="btn-Ver-Detalle" Onclick="btnVerDetalle_Click" ><a href='<%# "Detalle.aspx?id=" + Eval("Id") %>'>Detalle</a></button>
+                                    <p class="card-text">Precio: $ <%# string.Format("{0:0.00}", Eval("Precio")) %></p>
+                                    <div class="mt-auto">
+                                        <asp:Button ID="btnAgregarAlCarrito" runat="server" Text="Agregar al carrito" OnClick="btnAgregarAlCarrito_Click" CssClass="btn btn-primary mb-2" CommandArgument='<%# Eval("Id") %>' CommandName="ArticuloId" OnClientClick="actualizarContador(); return true;" Style="background-color: #007bff; color: white;" onmouseover="this.style.backgroundColor = '#a732da';" onmouseout="this.style.backgroundColor = '#007bff';" />
+                                        <button class="btn-Ver-Detalle">
+                                            <a href='<%# "Detalle.aspx?id=" + Eval("Id") %>'>Detalle</a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -80,24 +81,24 @@
 
             </div>
         </div>
-         
+
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    function actualizarContador() {
-        $.ajax({
-            url: 'Default.aspx/ObtenerCantidadCarrito', 
-            type: 'POST',
-            contentType: 'application/json; charset=utf-8',
-            dataType: 'json',
-            success: function (data) {
-                
-                contadorCarrito.textContent = data.d;
-            },
-            
-        });
-    }
-</script>
+    <script>
+        function actualizarContador() {
+            $.ajax({
+                url: 'Default.aspx/ObtenerCantidadCarrito',
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function (data) {
+
+                    contadorCarrito.textContent = data.d;
+                },
+
+            });
+        }
+    </script>
 
 </asp:Content>

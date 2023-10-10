@@ -24,8 +24,15 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
-            <asp:Label runat="server" ID="lblTotalCarrito" Text="Total del Carrito: $0.00" />
+                        
+            
 
+        <div>
+            <label for="txtCodigo">Ingrese el código:</label>
+            <asp:TextBox runat="server" ID="txtCodigo" ClientIDMode="Static"></asp:TextBox>
+            <asp:Button runat="server" ID="btnValidar" Text="Validar" OnClick="btnValidar_Click" />
+        </div>
+        <asp:Label runat="server" ID="lblTotalCarrito" Text="Total del Carrito: $0.00" />
 
     </section>
 

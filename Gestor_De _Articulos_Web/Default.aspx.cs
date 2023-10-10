@@ -16,6 +16,7 @@ namespace Gestor_De__Articulos_Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             ArticuloManager negocio = new ArticuloManager();
             ListaArticulos = negocio.listaParaImagenes();
 
@@ -25,7 +26,9 @@ namespace Gestor_De__Articulos_Web
                 repRepetidor.DataBind();
 
             }
-            
+
+
+
         }
 
         protected void btnAgregarAlCarrito_Click(object sender, EventArgs e)
@@ -55,8 +58,11 @@ namespace Gestor_De__Articulos_Web
                 }
             }
 
-           
+
+
+
             Session["Seleccionados"] = seleccionados;
+
         }        
 
     }

@@ -4,26 +4,29 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <asp:Label CssClass="contador" ID="cont" runat="server" Text="">0</asp:Label>
+
+    <div class="form-group">
+        <asp:Label ID="lblNombre" runat="server"  Text="Nombre:" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox>
+    </div>
+    <div class="form-group">
+        <asp:Label ID="lblDescripcion" runat="server"  Text="Descripcion:" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" CssClass="form-control"></asp:TextBox>
+    </div>   
+    <div class="form-group">
+        <asp:Label ID="lblImporte" runat="server"  Text="Importe:" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="txtImporte" runat="server" CssClass="form-control"></asp:TextBox>
+    </div>
 
     <asp:Repeater ID="repDetalle" runat="server">
         <ItemTemplate>
-            <div class="col-md-3 mb-4">
-                <div class="card border border-dark font-weight-bold mx-auto h-100" style="width: 18rem;">
-                    <img class="card-img-top " src='<%# Eval("Imagen") %>' alt="Card image cap" />
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title"><%# Eval("Nombre") %></h5>
-                        <p class="card-text"><%# Eval("Descripcion") %></p>
-                        <p class="card-text flex-grow-1"></p>
-                        <p class="card-text">Precio: $ <%# string.Format("{0:0.00}", Eval("Precio")) %></p>
-                        <div class="mt-auto">
 
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img src='<%# Container.DataItem %>' alt="Imagen" />
+
         </ItemTemplate>
     </asp:Repeater>
+
 
 
 

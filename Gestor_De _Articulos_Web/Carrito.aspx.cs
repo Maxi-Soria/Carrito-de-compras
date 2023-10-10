@@ -55,6 +55,38 @@ namespace Gestor_De__Articulos_Web
         }
 
 
+        protected void btnValidar_Click(object sender, EventArgs e)
+        {
+            string codigoIngresado = txtCodigo.Text.Trim();
+
+            if (codigoIngresado == "GENTES")
+            {
+                List<Articulo> seleccionados;
+                if (Session["Seleccionados"] != null)
+                {
+                    seleccionados = (List<Articulo>)Session["Seleccionados"];
+
+                    decimal totalCarrito = CalcularTotalCarrito(seleccionados);
+
+                    decimal descuento = totalCarrito * 0.30m;
+                    decimal totalConDescuento = totalCarrito - descuento;
+
+                    lblTotalCarrito.Text = "Total del Carrito con Descuento: $" + totalConDescuento.ToString("0.00");
+                }
+            }
+            else
+            {
+                List<Articulo> seleccionados = (List<Articulo>)Session["Seleccionados"];
+                decimal totalCarrito = CalcularTotalCarrito(seleccionados);
+                lblTotalCarrito.Text = "Codigo no valido, total: $" + totalCarrito.ToString("0.00");
+            }
+        }
+
+
+
+
+
+
         private decimal CalcularTotalCarrito(List<Articulo> articulos)
         {
             decimal total = 0;
