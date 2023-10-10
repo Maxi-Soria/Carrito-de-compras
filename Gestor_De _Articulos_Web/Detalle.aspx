@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="Gestor_De__Articulos_Web.Detalle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link href="estilos.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -19,13 +20,23 @@
         <asp:TextBox ID="txtImporte" runat="server" CssClass="form-control"></asp:TextBox>
     </div>
 
-    <asp:Repeater ID="repDetalle" runat="server">
+
+
+
+
+<div class="imagen-container">
+    <asp:Repeater runat="server" ID="repDetalle">
         <ItemTemplate>
-
             <img src='<%# Container.DataItem %>' alt="Imagen" />
-
         </ItemTemplate>
     </asp:Repeater>
+</div>
+
+
+
+
+
+
 
 
 

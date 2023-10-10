@@ -23,6 +23,8 @@ namespace Gestor_De__Articulos_Web
                     repEliminar.DataBind();
                     
                     decimal totalCarrito = CalcularTotalCarrito(seleccionados);
+                    decimal totalCarrito1 = CalcularTotalCarrito(seleccionados);
+                    lblTotalCarrito1.Text = "Total del Carrito1: $" + totalCarrito1.ToString("0.00");
                     lblTotalCarrito.Text = "Total del Carrito: $" + totalCarrito.ToString("0.00");
 
                 }

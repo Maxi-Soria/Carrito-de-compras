@@ -17,7 +17,7 @@
     border-radius:4px
 }
 .containerNav{
-    padding-top 0em;
+    padding-top: 0em;
     margin:0px,0px,0px,0px;
 }
 .navbar-nav .nav-item:not(:last-child) {
@@ -122,17 +122,35 @@ h1 {
     font-size: 10px; 
     padding: 3px 8px; 
 }
-
-
-
-
+.btn-Ver-Detalle a{
+    text-decoration:none;
+    color: #000000;
 }
-
 .container {
     margin-top: 30px;
 }
 
+.imagen-container {
+    margin-top: 50px;
+    margin-left:190px;
+    max-width: 1100px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+    
+}
 
+.imagen-container img {
+    max-width: 30%;
+    margin-bottom: 10px;
+    border: 3px solid #000;
+}
+
+.cocoPromo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 34px;
+}
 /*SECCION FOOTER*/
 .footer {
     background-color: #16202e;

@@ -4,9 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
         <section class="body-def">
-        <div class="reflected-header">
-            <h1>Llego la CocoSale, con el codigo 'loVoletea' 30% off</h1>
-        </div>
 
         <asp:Repeater runat="server" ID="repEliminar">
             <ItemTemplate>
@@ -26,13 +23,16 @@
         </asp:Repeater>
                         
             
+        <div class="cocoPromo">
+            <asp:Label runat="server" ID="lblTotalCarrito1" Text="Total del Carrito: $0.00" />
+            <div>
+                <label for="txtCodigo">Ingrese el código:</label>
+                <asp:TextBox runat="server" ID="txtCodigo" ClientIDMode="Static"></asp:TextBox>
+                <asp:Button runat="server" ID="btnValidar" Text="Validar" OnClick="btnValidar_Click" />
+            </div>
+            <asp:Label runat="server" ID="lblTotalCarrito" Text="Total del Carrito: $0.00" />
 
-        <div>
-            <label for="txtCodigo">Ingrese el código:</label>
-            <asp:TextBox runat="server" ID="txtCodigo" ClientIDMode="Static"></asp:TextBox>
-            <asp:Button runat="server" ID="btnValidar" Text="Validar" OnClick="btnValidar_Click" />
-        </div>
-        <asp:Label runat="server" ID="lblTotalCarrito" Text="Total del Carrito: $0.00" />
+       </div>
 
     </section>
 
