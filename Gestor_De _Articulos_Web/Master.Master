@@ -16,7 +16,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="containerNav">
-            <nav class="navbar navbar-expand " aria-label="Second navbar example">
+            <nav class="navbar navbar-expand" aria-label="Second navbar example" style="background-color: #a732da;">
                 <img src="https://cdn-icons-png.flaticon.com/512/4027/4027033.png" alt="logo" width="40" height="40" />
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
@@ -36,9 +36,9 @@
                                 <a runat="server" class="nav-link" href="Contacto.aspx">Contacto</a>
                             </li>
                         </ul>
-                        <form role="search">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        </form>
+                          <form role="search">
+                                 <input id="searchInput" class="border-black form-control" type="search" placeholder="Buscar por nombre" aria-label="Search">
+                            </form>
 
 
                         <asp:Label CssClass="contador" ID="contadorCarrito" runat="server" Text="">0</asp:Label>
@@ -65,5 +65,42 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const articleCards = document.querySelectorAll('.article-card');
+
+        searchInput.addEventListener('input', function () {
+            const searchText = searchInput.value.trim().toLowerCase();
+
+            articleCards.forEach(function (card) {
+                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+
+                if (cardTitle.includes(searchText)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function actualizarContador() {
+        $.ajax({
+            url: 'Default.aspx',
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (data) {
+               
+                contadorCarrito.textContent = data.d;
+            },
+            
+        });
+    }
+
+</script>
+
 </body>
 </html>

@@ -10,9 +10,9 @@
 
 
 
-    <div class="reflected-header">
-        <h1>Llego la CocoSale, con el codigo 'loVoletea' 30% off</h1>
-    </div>
+    <div class="reflected-header" style="text-shadow: 2px 2px #a732da;">
+    <h1>Llego la CocoSale, con el codigo 'loVoletea' 30% off</h1>
+</div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -60,7 +60,7 @@
 
                 <asp:Repeater runat="server" ID="repRepetidor">
                     <ItemTemplate>
-                        <div class="col-md-3 mb-4">
+                        <div class="col-md-3 mb-4 article-card">
                             <div class="card border border-dark font-weight-bold mx-auto h-100" style="width: 18rem;">
                                 <img class="card-img-top " src='<%# Eval("Imagen") %>' alt="Card image cap" />
                                 <div class="card-body d-flex flex-column">
@@ -69,7 +69,7 @@
                                     <p class="card-text flex-grow-1"></p>
                                     <p class="card-text">Precio: $ <%# string.Format("{0:0.00}", Eval("Precio")) %></p>                                                  
                                     <div class="mt-auto" >
-                                        <asp:Button ID="btnAgregarAlCarrito" runat="server" Text="Agregar al carrito" OnClick="btnAgregarAlCarrito_Click" CssClass="btn btn-primary mb-2" CommandArgument='<%# Eval("Id") %>' CommandName="ArticuloId" />
+                                        <asp:Button ID="btnAgregarAlCarrito" runat="server" Text="Agregar al carrito" OnClick="btnAgregarAlCarrito_Click" CssClass="btn btn-primary mb-2" CommandArgument='<%# Eval("Id") %>' CommandName="ArticuloId" OnClientClick="actualizarContador(); return true;" style="background-color: #007bff; color: white;" onmouseover="this.style.backgroundColor = '#a732da';" onmouseout="this.style.backgroundColor = '#007bff';" />
                                         <button class="btn-Ver-Detalle" Onclick="btnVerDetalle_Click" ><a href='<%# "Detalle.aspx?id=" + Eval("Id") %>'>Detalle</a></button>
                                     </div>
                                 </div>
@@ -82,5 +82,22 @@
         </div>
          
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function actualizarContador() {
+        $.ajax({
+            url: 'Default.aspx/ObtenerCantidadCarrito', 
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (data) {
+                
+                contadorCarrito.textContent = data.d;
+            },
+            
+        });
+    }
+</script>
 
 </asp:Content>
