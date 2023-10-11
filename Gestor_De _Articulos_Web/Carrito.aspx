@@ -34,6 +34,8 @@
 
        </div>
 
+            <asp:Button ID="btnConfirmarCompra" runat="server" Text="Confirmar compra" OnClick="btnConfirmarCompra_Click" CssClass="btn btn-success" />
+            <asp:Label ID="lblMensajeAgradecimiento" runat="server" Text="" Visible="false"></asp:Label>
     </section>
 
 

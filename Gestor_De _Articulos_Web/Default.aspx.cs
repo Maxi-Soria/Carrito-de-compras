@@ -62,7 +62,7 @@ namespace Gestor_De__Articulos_Web
 
 
             Session["Seleccionados"] = seleccionados;
-
+            Response.Redirect(Request.RawUrl);
         }        
 
     }

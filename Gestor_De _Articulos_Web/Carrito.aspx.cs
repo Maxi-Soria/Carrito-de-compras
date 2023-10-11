@@ -51,7 +51,7 @@ namespace Gestor_De__Articulos_Web
             }
 
             Session["Seleccionados"] = nuevaLista;
-
+            Response.Redirect(Request.RawUrl);
             repEliminar.DataSource = nuevaLista;
             repEliminar.DataBind();
         }
@@ -85,7 +85,14 @@ namespace Gestor_De__Articulos_Web
         }
 
 
-
+        protected void btnConfirmarCompra_Click(object sender, EventArgs e)
+        {
+            
+            Session.Remove("Seleccionados");
+                        
+            lblMensajeAgradecimiento.Text = "Gracias por comprar. Vuelva pronto";
+            lblMensajeAgradecimiento.Visible = true;
+        }
 
 
 
