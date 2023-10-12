@@ -18,6 +18,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -39,6 +40,13 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Fiambres</h5>
                     <p>Venta de longanizas, salames picado grueso y salchichones primavera</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://syltec.es/blog/wp-content/uploads/2021/10/Dise%C3%B1o-sin-t%C3%ADtulo-8-1024x512.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cositas</h5>
+                    <p>¡No te podés perder tu cargarCadena y class Fecha!</p>
                 </div>
             </div>
         </div>
