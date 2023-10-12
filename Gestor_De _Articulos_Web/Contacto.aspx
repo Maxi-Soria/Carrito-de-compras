@@ -3,7 +3,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Web desarrollada por Maximiliano Soria y Gonzalo Ligero</h1>
     <asp:Panel ID="ContactForm" runat="server" CssClass="contact-form">
     <h2 class="text-center">Contacto</h2>
     <div class="form-group">
